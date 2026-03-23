@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>What Might This Be Protecting You From?</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <div class="moon">☾</div>
+
+    <h1>What Might This Be Protecting You From?</h1>
+    <p class="subtitle">
+      Sometimes patterns form to help you avoid certain feelings or experiences.
+      Notice what feels most true.
+    </p>
+
+    <div class="button-grid">
+      <button class="protect-btn" data-key="rejected">Feeling rejected</button>
+      <button class="protect-btn" data-key="exposed">Feeling exposed</button>
+      <button class="protect-btn" data-key="failure">Feeling like a failure</button>
+      <button class="protect-btn" data-key="conflict">Conflict or tension</button>
+      <button class="protect-btn" data-key="disappointment">Disappointment</button>
+      <button class="protect-btn" data-key="uncertainty">Uncertainty</button>
+      <button class="protect-btn" data-key="misunderstood">Being misunderstood</button>
+      <button class="protect-btn" data-key="control">Losing control</button>
+    </div>
+
+    <section class="insight-card hidden" id="insightCard">
+      <div class="insight-block">
+        <h2>This pattern may be helping you:</h2>
+        <p id="helpText"></p>
+      </div>
+
+      <div class="insight-block cost-block">
+        <h2>But it may also be:</h2>
+        <p id="costText"></p>
+      </div>
+
+      <div class="reflection-prompt" id="reflectionPrompt"></div>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
