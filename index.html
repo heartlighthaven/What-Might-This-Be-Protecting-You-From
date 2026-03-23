@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>What Might This Be Protecting You From?</title>
+  <title>Why This Pattern Continues</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,35 +15,59 @@
   <div class="app-shell">
     <div class="moon">☾</div>
 
-    <h1>What Might This Be Protecting You From?</h1>
+    <h1>Why This Pattern Continues</h1>
     <p class="subtitle">
-      Sometimes patterns form to help you avoid certain feelings or experiences.
-      Notice what feels most true.
+      Choose something you tend to do. Then notice the feeling that often lives underneath it.
     </p>
 
-    <div class="button-grid">
-      <button class="protect-btn" data-key="rejected">Feeling rejected</button>
-      <button class="protect-btn" data-key="exposed">Feeling exposed</button>
-      <button class="protect-btn" data-key="failure">Feeling like a failure</button>
-      <button class="protect-btn" data-key="conflict">Conflict or tension</button>
-      <button class="protect-btn" data-key="disappointment">Disappointment</button>
-      <button class="protect-btn" data-key="uncertainty">Uncertainty</button>
-      <button class="protect-btn" data-key="misunderstood">Being misunderstood</button>
-      <button class="protect-btn" data-key="control">Losing control</button>
-    </div>
+    <section class="picker-section">
+      <h2>Choose a pattern or something you tend to do</h2>
+      <div class="button-grid" id="patternGrid">
+        <button class="choice-btn" data-type="pattern" data-key="shut_down">I shut down</button>
+        <button class="choice-btn" data-type="pattern" data-key="overthink">I overthink</button>
+        <button class="choice-btn" data-type="pattern" data-key="people_please">I people please</button>
+        <button class="choice-btn" data-type="pattern" data-key="avoid">I avoid responding</button>
+        <button class="choice-btn" data-type="pattern" data-key="control">I try to control everything</button>
+        <button class="choice-btn" data-type="pattern" data-key="withdraw">I withdraw</button>
+        <button class="choice-btn" data-type="pattern" data-key="overexplain">I over explain</button>
+        <button class="choice-btn" data-type="pattern" data-key="procrastinate">I procrastinate</button>
+      </div>
+    </section>
 
-    <section class="insight-card hidden" id="insightCard">
-      <div class="insight-block">
-        <h2>This pattern may be helping you:</h2>
-        <p id="helpText"></p>
+    <section class="picker-section">
+      <h2>When I do this, it is often because I feel...</h2>
+      <div class="button-grid" id="feelingGrid">
+        <button class="choice-btn" data-type="feeling" data-key="rejected">Rejected</button>
+        <button class="choice-btn" data-type="feeling" data-key="exposed">Exposed</button>
+        <button class="choice-btn" data-type="feeling" data-key="not_good_enough">Not good enough</button>
+        <button class="choice-btn" data-type="feeling" data-key="overwhelmed">Overwhelmed</button>
+        <button class="choice-btn" data-type="feeling" data-key="misunderstood">Misunderstood</button>
+        <button class="choice-btn" data-type="feeling" data-key="out_of_control">Out of control</button>
+        <button class="choice-btn" data-type="feeling" data-key="disappointed">Disappointed</button>
+        <button class="choice-btn" data-type="feeling" data-key="vulnerable">Vulnerable</button>
+      </div>
+    </section>
+
+    <section class="result-card hidden" id="resultCard">
+      <div class="result-block">
+        <h3>Pattern</h3>
+        <p id="patternText"></p>
       </div>
 
-      <div class="insight-block cost-block">
-        <h2>But it may also be:</h2>
-        <p id="costText"></p>
+      <div class="result-block">
+        <h3>Feeling underneath it</h3>
+        <p id="feelingText"></p>
       </div>
 
-      <div class="reflection-prompt" id="reflectionPrompt"></div>
+      <div class="result-block">
+        <h3>This may be protecting you from</h3>
+        <p id="protectionText"></p>
+      </div>
+
+      <div class="summary-block">
+        <h3>Reflection</h3>
+        <p id="summaryText"></p>
+      </div>
     </section>
   </div>
 
